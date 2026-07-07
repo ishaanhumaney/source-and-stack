@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Source & Stack // Tech Editorial</title>
+    <title>Telemetry Stream // Source & Stack</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,700;1,9..40,400&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -18,8 +18,8 @@
             <h1>Source <span>&</span> Stack</h1>
         </div>
         <nav class="main-nav">
-            <a href="index.html" class="active">Core</a>
-            <a href="telemetry.html">Telemetry</a>
+            <a href="index.html">Core</a>
+            <a href="telemetry.html" class="active">Telemetry</a>
             <a href="perspectives.html">Perspectives</a>
             <a href="network.html">Network Node</a>
         </nav>
@@ -27,87 +27,65 @@
 
     <main class="editorial-container">
         
-        <section id="core" class="hero-block">
-            <div class="hero-content">
-                <div class="tag">System Architecture</div>
-                <h2>The local-first software movement is quietly winning.</h2>
-                <p class="summary">Tired of fragile cloud architectures and creeping subscription costs, a dedicated layer of developers is building heavy client-side tools designed to survive offline.</p>
-                <div class="author-line">By Rowan Vance &bull; Dev Ops</div>
+        <!-- ARTICLE 1 -->
+        <article class="deep-dive-story">
+            <div class="tag">Telemetry // Hardware Vectors</div>
+            <h2>Silicon Limits and the Optical Computing Race</h2>
+            <div class="author-line" style="margin-bottom: 30px;">Published July 2026 &bull; Written by Rowan Vance</div>
+            <div class="story-body" style="text-align: justify;">
+                <p class="lead-in" style="font-size: 1.2rem; color: var(--text-main); margin-bottom: 20px; font-weight: 500;">
+                    Traditional copper and silicon pathways are hitting undeniable physical bounds. As thermal throttling stalls standard architecture, light-based microchips are transitioning from academic theory into physical foundry production.
+                </p>
+                <p style="color: var(--text-muted); margin-bottom: 15px;">
+                    For decades, Moore's Law sustained the breakneck pace of modern computation by squeezing an ever-increasing density of metal-oxide-semiconductor field-effect transistors onto silicon wafers. However, sub-nanometer node design has brought engineering teams face-to-face with quantum tunneling and extreme electron leakage. Standard copper pathways generate immense localized thermal energy that conventional heat sinks and liquid cooling matrices can no longer safely dissipate without massive infrastructure overhead.
+                </p>
+                <div class="wireframe-placeholder" style="margin: 30px 0; min-height: 200px;">
+                    <span>[ Diagram_Optic_Refraction_Paths.dat ]</span>
+                </div>
+                <p style="color: var(--text-muted); margin-bottom: 15px;">
+                    Photonic integrated circuits (PICs) bypass this thermodynamic ceiling entirely by replacing electrons with photons traveling along microscopic wave guides. Because light beams do not experience electrical resistance or generate electromagnetic interference, data can be multiplexed across dozens of simultaneous wavelengths. Early lab foundry benchmarks indicate processing throughput increases upwards of 30x over traditional architectures, consuming a fraction of the raw wattage.
+                </p>
             </div>
-            <div class="hero-media">
-                <div class="wireframe-placeholder">
-                    <span>[ Matrix_Render_V2.obj ]</span>
-                </div>
+        </article>
+
+        <!-- ARTICLE 2 -->
+        <article class="deep-dive-story" style="margin-top: 40px;">
+            <div class="tag">Telemetry // Cybersecurity</div>
+            <h2>The Dependency Trap Hidden in Your Package Lockfile</h2>
+            <div class="author-line" style="margin-bottom: 30px;">Published June 2026 &bull; Written by Marcus Vance</div>
+            <div class="story-body" style="text-align: justify;">
+                <p class="lead-in" style="font-size: 1.2rem; color: var(--text-main); margin-bottom: 20px; font-weight: 500;">
+                    How an unmaintained helper library almost compromised thousands of corporate supply chains last week.
+                </p>
+                <p style="color: var(--text-muted); margin-bottom: 15px;">
+                    Modern modern software systems are rarely built from scratch; instead, they are heavily assembled from layers of public open-source packages. This stack dependencies model introduces significant risks, as highlighted by a recent near-miss security incident. A single developer, managing a nested utility function used by thousands of top-tier cloud systems, silently abandoned the project due to maintainer burnout. Exploitation groups quickly stepped in, registering similar-sounding packages to execute a typosquatting supply-chain injection.
+                </p>
+                <p style="color: var(--text-muted); margin-bottom: 15px;">
+                    The payload remained undetected inside nested package lockfiles, designed to slip right past signature-based malware scanners. It wasn't until a routine performance profile flag noticed unexpected network requests to a foreign staging IP address that the industry was alerted. This close call underscores the desperate need for automated cryptographic verification of code provenance and rigorous, real-time sandboxing of third-party dependencies during live runtime executions.
+                </p>
             </div>
-        </section>
+        </article>
 
-        <div class="content-stream">
-            
-            <section class="stream-col">
-                <h3 class="col-heading">Telemetry</h3>
-                
-                <article class="feed-item">
-                    <span class="sub-tag">Hardware</span>
-                    <h4>Silicon limits and the optical computing race</h4>
-                    <p>Traditional transistors are hitting physical boundaries. Light-based microchips are no longer academic theory.</p>
-                </article>
+        <!-- ARTICLE 3 -->
+        <article class="deep-dive-story" style="margin-top: 40px;">
+            <div class="tag">Telemetry // Infrastructure</div>
+            <h2>Decentralized Edge Servers Survive Regional Grid Surges</h2>
+            <div class="author-line" style="margin-bottom: 30px;">Published May 2026 &bull; Written by Dev Team Logs</div>
+            <div class="story-body" style="text-align: justify;">
+                <p class="lead-in" style="font-size: 1.2rem; color: var(--text-main); margin-bottom: 20px; font-weight: 500;">
+                    A statistical breakdown of how localized failovers kept distributed nodes online during peak load drops.
+                </p>
+                <p style="color: var(--text-muted); margin-bottom: 15px;">
+                    When a series of severe heatwaves triggered rolling blackouts across industrial transmission hubs last week, conventional multi-tenant cloud hyperscalers suffered severe localized latency spikes. However, teams executing applications across distributed, decentralized edge environments noticed zero system interruption. This resilience is attributed to advanced autonomous peer-to-peer routing layers that dynamically calculate cluster power availability.
+                </p>
+                <p style="color: var(--text-muted); margin-bottom: 15px;">
+                    Rather than routing client traffic back to a centralized facility that might be experiencing power degradation, the mesh fabric instantly segmented non-essential storage routines and rerouted incoming user requests to independent, localized nodes running on microgrids. System telemetry reports show that data replication layers maintained structural sync throughout the event, validating decentralized edge networks as a primary path forward for critical internet services.
+                </p>
+            </div>
+        </article>
 
-                <article class="feed-item">
-                    <span class="sub-tag">Cybersecurity</span>
-                    <h4>The dependency trap hidden in your package lockfile</h4>
-                    <p>How an unmaintained helper library almost compromised thousands of corporate supply chains last week.</p>
-                </article>
-
-                <article class="feed-item">
-                    <span class="sub-tag">Infrastructure</span>
-                    <h4>Decentralized edge servers survive regional grid surges</h4>
-                    <p>A statistical breakdown of how localized failovers kept distributed nodes online during peak load drops.</p>
-                </article>
-            </section>
-
-            <section class="stream-col highlight-col">
-                <h3 class="col-heading">Perspectives</h3>
-                
-                <article class="essay-item">
-                    <h4>"Stop building API wrappers and calling it a platform."</h4>
-                    <p>If your startup can be entirely bricked by a routine model update from an upstream provider, you built a feature, not an ecosystem.</p>
-                    <div class="author-line">Opinion / Dialed-In</div>
-                </article>
-
-                <article class="essay-item">
-                    <h4>The cognitive load of micro-frameworks</h4>
-                    <p>Why modern web engineering teams are starting to regress back toward monoliths for team sanity.</p>
-                    <div class="author-line">Opinion / Elena Rostova</div>
-                </article>
-
-                <article class="essay-item">
-                    <h4>Open source sustainability is facing an identity crisis</h4>
-                    <p>As enterprise engines scrap code repos for training data, independent maintainers rethink public licenses completely.</p>
-                    <div class="author-line">Opinion / K. Holtz</div>
-                </article>
-            </section>
-
-            <section class="stream-col desk-only">
-                <h3 class="col-heading">Network Node</h3>
-                
-                <div class="native-ad">
-                    <span class="ad-pill">Sponsor</span>
-                    <h5>Deploy to the Edge with Zero Manifests</h5>
-                    <p>Skip the YAML headaches. Push raw code directly to global runtime environments globally in 12ms.</p>
-                    <a href="#" class="ad-link">Initialize Account &rarr;</a>
-                </div>
-
-                <div class="data-widget">
-                    <h4 class="widget-title">Active Vectors</h4>
-                    <ul class="data-list">
-                        <li><span>01</span> Rust 1.95 UI standards approved</li>
-                        <li><span>02</span> Energy grids buckle under compute demands</li>
-                        <li><span>03</span> The rise of browser-native databases</li>
-                        <li><span>04</span> Kernel patch mitigates ring-0 memory vulnerabilities</li>
-                    </ul>
-                </div>
-            </section>
-
+        <div style="max-width: 800px; margin: 20px auto; text-align: left;">
+            <a href="index.html" style="color: var(--accent-glow); text-decoration: none; font-weight: bold;">&larr; Return to Main Core Stream</a>
         </div>
     </main>
 
@@ -119,8 +97,6 @@
             </div>
             <div class="footer-disclaimers">
                 <p>This open-source web-page is only for education and demonstration purpose. This open-source web-page does not promote any company.</p>
-                <p>The title name of this open-source web-page 'Source & Stack' is also unregistered by any of the individual / company / organisation till date.</p>
-                <p>This open-source web-page is made on a local-host and not hosted till date. It will not be uploaded on any server and also this open-source web-page will not be given any domain.</p>
             </div>
         </div>
     </footer>
