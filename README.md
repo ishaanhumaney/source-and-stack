@@ -44,9 +44,6 @@ Because this system runs completely raw, you don't even need to clone code to yo
 
 ```text
 source-and-stack/
-├── .github/
-│   └── workflows/
-│       └── ci.yml          # Automated HTML structural linting engine
 ├── .gitignore              # Development environment path exclusion rules
 ├── README.md               # System architectural documentation
 ├── index.html              # Main application portal & content stream
